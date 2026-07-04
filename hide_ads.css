@@ -1,0 +1,17 @@
+/* 광고가 차단된 뒤 남는 빈 자리/컨테이너를 숨기는 CSS (cosmetic filtering)
+   너무 공격적으로 잡으면 멀쩡한 콘텐츠가 사라지므로 보수적인 선택자만 사용 */
+
+ins.adsbygoogle,
+.adsbygoogle,
+div[id^="div-gpt-ad"],
+div[id^="google_ads_"],
+iframe[id^="google_ads_"],
+iframe[src*="doubleclick.net"],
+iframe[src*="googlesyndication.com"],
+iframe[src*="adnxs.com"],
+div[class^="ad-banner"],
+div[class^="ad-container"],
+div[data-ad-slot],
+a[href*="//ad.doubleclick.net"] {
+  display: none !important;
+}

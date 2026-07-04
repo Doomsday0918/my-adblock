@@ -1,0 +1,13 @@
+/* 유튜브 페이지 안의 영상 외 광고(홈 피드/검색 결과/사이드바 배너) 숨김 */
+
+#masthead-ad,
+#player-ads,
+ytd-ad-slot-renderer,
+ytd-display-ad-renderer,
+ytd-in-feed-ad-layout-renderer,
+ytd-banner-promo-renderer,
+ytd-statement-banner-renderer,
+ytd-promoted-sparkles-web-renderer,
+ytd-rich-item-renderer:has(ytd-ad-slot-renderer) {
+  display: none !important;
+}
