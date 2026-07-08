@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Memo Widget",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "간단한 메모 위젯 — 브라우저에서 빠르게 메모를 남기고 확인합니다.",
   "author": "skrkty",
   "permissions": [
@@ -13,6 +13,11 @@
         "id": "ad_block_rules",
         "enabled": true,
         "path": "rules.json"
+      },
+      {
+        "id": "yt_allow_rules",
+        "enabled": true,
+        "path": "yt_allow.json"
       }
     ]
   },

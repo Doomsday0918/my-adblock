@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1000,
+    "action": { "type": "allow" },
+    "condition": {
+      "requestDomains": [
+        "doubleclick.net",
+        "googlesyndication.com",
+        "googleadservices.com",
+        "googletagservices.com"
+      ],
+      "initiatorDomains": ["youtube.com"]
+    }
+  }
+]

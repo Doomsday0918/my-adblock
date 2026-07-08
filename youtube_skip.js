@@ -17,7 +17,7 @@
 
 (() => {
   const TAG = "[my-adblock]";
-  console.log(TAG, "youtube adblock v6 로드됨");
+  console.log(TAG, "youtube adblock v7 로드됨");
 
   // 플레이어 응답에서 삭제할 광고 관련 최상위 키
   const AD_KEYS = [

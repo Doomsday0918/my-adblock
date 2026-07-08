@@ -21,6 +21,7 @@ DIST = os.path.join(HERE, "dist")
 INCLUDE = [
     "manifest.json",
     "rules.json",
+    "yt_allow.json",
     "hide_ads.css",
     "youtube_ads.css",
     "youtube_skip.js",
