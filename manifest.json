@@ -1,10 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "Simple Ad Blocker",
-  "version": "1.4.1",
-  "description": "MV3 기반 오픈소스 광고 차단기. 광고/추적 도메인 차단 + 유튜브 광고 자동 스킵.",
+  "name": "Memo Widget",
+  "version": "1.4.2",
+  "description": "간단한 메모 위젯 — 브라우저에서 빠르게 메모를 남기고 확인합니다.",
   "author": "skrkty",
-  "permissions": ["declarativeNetRequest"],
+  "permissions": [
+    "declarativeNetRequest"
+  ],
   "declarative_net_request": {
     "rule_resources": [
       {
@@ -16,14 +18,25 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "css": ["hide_ads.css"],
+      "matches": [
+        "<all_urls>"
+      ],
+      "css": [
+        "hide_ads.css"
+      ],
       "run_at": "document_start"
     },
     {
-      "matches": ["*://www.youtube.com/*", "*://m.youtube.com/*"],
-      "js": ["youtube_skip.js"],
-      "css": ["youtube_ads.css"],
+      "matches": [
+        "*://www.youtube.com/*",
+        "*://m.youtube.com/*"
+      ],
+      "js": [
+        "youtube_skip.js"
+      ],
+      "css": [
+        "youtube_ads.css"
+      ],
       "run_at": "document_start",
       "world": "MAIN"
     }
