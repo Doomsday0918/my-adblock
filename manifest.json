@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Simple Ad Blocker",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "MV3 기반 오픈소스 광고 차단기. 광고/추적 도메인 차단 + 유튜브 광고 자동 스킵.",
   "author": "skrkty",
   "permissions": ["declarativeNetRequest"],
@@ -24,7 +24,7 @@
       "matches": ["*://www.youtube.com/*", "*://m.youtube.com/*"],
       "js": ["youtube_skip.js"],
       "css": ["youtube_ads.css"],
-      "run_at": "document_end",
+      "run_at": "document_start",
       "world": "MAIN"
     }
   ]
